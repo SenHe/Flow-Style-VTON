@@ -1,1 +1,1 @@
-# Flow Style: Style-Based Apperance Flow for Virtual Try-On
+# Flow Style: Style-Based Appearance Flow for Virtual Try-On
