@@ -12,7 +12,18 @@ For VITON dataset, download the training data from [VITON_train](https://drive.g
 
 For perceptual loss computation, download  the vgg checkpoint from [VGG_Model](https://drive.google.com/file/d/1Mw24L52FfOT9xXm3I1GL8btn7vttsHd9/view?usp=sharing) and put `vgg19-dcbb9e9d.pth` under the folder `train/models`.
 
+### Custom dataset
+
 For other custom dataset, please generate the training data folder with the same structure as `VITON_traindata`.
+
+More specifically, you need to prepare human parsing, pose (18 key points, saved in .json file) and densepose (a heatmap, different body region has different value).
+
+For human parsing, you can use [Human parser](https://github.com/levindabhi/Self-Correction-Human-Parsing-for-ACGPN).
+
+For pose, you can use [Human pose](https://github.com/Hzzone/pytorch-openpose).
+
+For dense pose, you can use [Dense pose](https://github.com/facebookresearch/DensePose).
+
 
 ### Stage 1: Parser-Based Appearance Flow Style
 ```
