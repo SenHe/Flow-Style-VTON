@@ -1,4 +1,4 @@
-# Flow Style: Style-Based Appearance Flow for Virtual Try-On
+# Style-Based Global Appearance Flow for Virtual Try-On (CVPR 2022)
 
 ## Requirements
 
