@@ -37,6 +37,8 @@ def de_offset(s_grid):
 
 start_epoch, epoch_iter = 1, 0
 
+f2c = flow_util.flow2color()
+
 data_loader = CreateDataLoader(opt)
 dataset = data_loader.load_data()
 dataset_size = len(data_loader)
