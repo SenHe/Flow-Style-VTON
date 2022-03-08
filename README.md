@@ -3,7 +3,7 @@
 ## Requirements
 
 - python 3.6
-- pytorch 1.1.0 (as no third party libraries are required for this codebase, other version should also work, not yet tested)
+- pytorch 1.1.0 (as no third party libraries are required in this codebase, other version should also work, not yet tested)
 - tensorboardX
 - opencv
 ## Training ( `cd` to the train folder)
