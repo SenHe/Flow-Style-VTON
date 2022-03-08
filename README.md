@@ -9,6 +9,11 @@
 - opencv
 
 ## Inference (`cd` to test folder)
+
+Download the testing data drom [here](https://drive.google.com/file/d/1Y7uV0gomwWyxCvvH8TIbY7D9cTAUy6om/view).
+
+Download pretrained checkpoint from [here](https://drive.google.com/drive/folders/1hunG-84GOSq-qviJRvkXeSMFgnItOTTU?usp=sharing).
+The checkpoint trained without augmentation is better for testing set in the VITON dataset. But the checkpoint trained with augmentation is more robust for in-the-wild images.
 ```
 python test.py --name demo --resize_or_crop None --batchSize 1 --gpu_ids 0 --warp_checkpoint your_path_to_the_down_loaded_ckp/PFAFN_warp_epoch_101.pth --gen_checkpoint your_path_to_the_down_loaded_ckp/PFAFN_gen_epoch_101.pth
 ```
