@@ -1,7 +1,7 @@
 # Style-Based Global Appearance Flow for Virtual Try-On (CVPR 2022)
 ### [Project Page](https://github.com/SenHe/Flow-Style-VTON/) | [Paper](https://github.com/SenHe/Flow-Style-VTON/)
 <div align="center">
-<img src=./fig/archi.png width="1200">
+<img src=gif_detail.gif width="1200">
 </div>
 
 ## Requirements
