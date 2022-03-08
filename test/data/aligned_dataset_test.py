@@ -11,7 +11,7 @@ class AlignedDataset(BaseDataset):
         self.fine_height=256
         self.fine_width=192
 
-        self.text = './test_data_pairs/test_pairs_same.txt'
+        self.text = './test_pairs.txt'
 
         dir_I = '_img'
         self.dir_I = os.path.join(opt.dataroot, opt.phase + dir_I)
