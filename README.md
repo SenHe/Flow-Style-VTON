@@ -21,7 +21,7 @@ More specifically, you need to prepare human parsing, pose (18 key points, saved
 
 For human parsing, you can use [Human parser](https://github.com/levindabhi/Self-Correction-Human-Parsing-for-ACGPN).
 
-For pose, you can use [Human pose](https://github.com/Hzzone/pytorch-openpose).
+For pose, you can use [Openpose](https://github.com/CMU-Perceptual-Computing-Lab/openpose).
 
 For dense pose, you can use [Dense pose](https://github.com/facebookresearch/DensePose).
 
