@@ -1,4 +1,5 @@
 # Style-Based Global Appearance Flow for Virtual Try-On (CVPR 2022)
+### [Project Page](https://senhe.github.io/projects/iccv_2021_lifespan_face/) | [Paper](https://arxiv.org/pdf/2108.02874.pdf)
 
 ## Requirements
 
