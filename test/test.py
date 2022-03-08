@@ -10,8 +10,30 @@ import torch
 import cv2
 import torch.nn.functional as F
 from torchvision import utils
+from util import flow_util
 
 opt = TestOptions().parse()
+
+
+def de_offset(s_grid):
+    [b,_,h,w] = s_grid.size()
+
+
+    x = torch.arange(w).view(1, -1).expand(h, -1).float()
+    y = torch.arange(h).view(-1, 1).expand(-1, w).float()
+    x = 2*x/(w-1)-1
+    y = 2*y/(h-1)-1
+    grid = torch.stack([x,y], dim=0).float().cuda()
+    grid = grid.unsqueeze(0).expand(b, -1, -1, -1)
+
+    offset = s_grid - grid
+
+    offset_x = offset[:,0,:,:] * (w-1) / 2
+    offset_y = offset[:,1,:,:] * (w-1) / 2
+
+    offset = torch.cat((offset_x,offset_y),0)
+    
+    return  offset
 
 start_epoch, epoch_iter = 1, 0
 
@@ -74,6 +96,8 @@ for epoch in range(1,2):
         print(data['p_name'])
 
         if step % 1 == 0:
+            
+            ## save try-on image only
 
             utils.save_image(
                 p_tryon,
@@ -82,15 +106,24 @@ for epoch in range(1,2):
                 normalize=True,
                 range=(-1,1),
             )
-            a = real_image.float().cuda()
-            b= clothes.cuda()
-            c = p_tryon
-            #combine = torch.cat([a[0],b[0],c[0], d[0]], 2).squeeze()
-            combine = torch.cat([a[0],b[0],warped_cloth[0],c[0]], 2).squeeze()
-            cv_img=(combine.permute(1,2,0).detach().cpu().numpy()+1)/2
-            rgb=(cv_img*255).astype(np.uint8)
-            bgr=cv2.cvtColor(rgb,cv2.COLOR_RGB2BGR)
-            cv2.imwrite('./all_our_t_results'+'/'+data['p_name'][0],bgr)
+            
+            ## save person image, garment, flow, warped garment, and try-on image
+            
+            #a = real_image.float().cuda()
+            #b = clothes.cuda()
+            #flow_offset = de_offset(last_flow)
+            #flow_color = f2c(flow_offset).cuda()
+            #c= warped_cloth.cuda()
+            #d = p_tryon
+            #combine = torch.cat([a[0],b[0], flow_color, c[0], d[0]], 2).squeeze()
+            #utils.save_image(
+            #    combine,
+            #    os.path.join('./im_gar_flow_wg', data['p_name'][0]),
+            #    nrow=int(1),
+            #    normalize=True,
+            #    range=(-1,1),
+            #)
+            
 
         step += 1
         if epoch_iter >= dataset_size:
