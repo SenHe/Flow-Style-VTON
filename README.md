@@ -7,6 +7,12 @@
 - pytorch 1.1.0 (as no third party libraries are required in this codebase, other version should also work, not yet tested)
 - tensorboardX
 - opencv
+
+## Inference (`cd` to test folder)
+```
+python test.py --name demo --resize_or_crop None --batchSize 1 --gpu_ids 0 --warp_checkpoint your_path_to_the_down_loaded_ckp/PFAFN_warp_epoch_101.pth --gen_checkpoint your_path_to_the_down_loaded_ckp/PFAFN_gen_epoch_101.pth
+```
+
 ## Training ( `cd` to the train folder)
 
 For VITON dataset, download the training data from [VITON_train](https://drive.google.com/file/d/1Uc0DTTkSfCPXDhd4CMx2TQlzlC6bDolK/view?usp=sharing) and put the folder `VITON_traindata` under the folder`train/datase` 
