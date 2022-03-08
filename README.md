@@ -43,3 +43,22 @@ sh scripts/train_PFAFN_stage1_fs.sh
 ```
 sh scripts/train_PFAFN_e2e_fs.sh
 ```
+
+## Testing (comming soon)
+
+## Reference
+
+If you find this repo helpful, please consider citing:
+
+```
+@inproceedings{he2022fs_vton,
+  title={Style-Based Global Appearance Flow for Virtual Try-On},
+  author={He, Sen and Song, Yi-Zhe and Xiang, Tao},
+  booktitle={CVPR},
+  year={2022}
+}
+```
+
+## Acknowledgements
+
+This repository is based on [PF-AFN](https://github.com/geyuying/PF-AFN), where we replaced the [tensor correlation](https://github.com/lmb-freiburg/flownet2) based flow estimation with our proposed style-based flow estimation.
