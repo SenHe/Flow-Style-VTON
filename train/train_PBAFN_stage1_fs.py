@@ -19,8 +19,11 @@ os.makedirs(path,exist_ok=True)
 os.makedirs(opt.checkpoints_dir,exist_ok=True)
 
 def CreateDataset(opt):
-    from data.aligned_dataset import AlignedDataset_aug
-    dataset = AlignedDataset_aug()
+    #training with augumentation
+    #from data.aligned_dataset import AlignedDataset_aug
+    #dataset = AlignedDataset_aug()
+    from data.aligned_dataset import AlignedDataset
+    dataset = AlignedDataset()
     print("dataset [%s] was created" % (dataset.name()))
     dataset.initialize(opt)
     return dataset
