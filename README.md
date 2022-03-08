@@ -51,7 +51,6 @@ sh scripts/train_PFAFN_stage1_fs.sh
 sh scripts/train_PFAFN_e2e_fs.sh
 ```
 
-## Testing (comming soon)
 
 ## Reference
 
