@@ -42,6 +42,9 @@ For pose, you can use [Openpose](https://github.com/CMU-Perceptual-Computing-Lab
 For dense pose, you can use [Dense pose](https://github.com/facebookresearch/DensePose).
 
 
+__Note:__ if you want to train with augmentation, check [here](https://github.com/SenHe/Flow-Style-VTON/blob/785a00fa4ce68fa0cee9f8247f1dc2d35e946842/train/train_PBAFN_stage1_fs.py#L21), [here](https://github.com/SenHe/Flow-Style-VTON/blob/785a00fa4ce68fa0cee9f8247f1dc2d35e946842/train/train_PBAFN_e2e_fs.py#L21), [here](https://github.com/SenHe/Flow-Style-VTON/blob/785a00fa4ce68fa0cee9f8247f1dc2d35e946842/train/train_PFAFN_stage1_fs.py#L23) and [here](https://github.com/SenHe/Flow-Style-VTON/blob/785a00fa4ce68fa0cee9f8247f1dc2d35e946842/train/train_PFAFN_e2e_fs.py#L22) in the code.
+
+
 ### Stage 1: Parser-Based Appearance Flow Style
 ```
 sh scripts/train_PBAFN_stage1_fs.sh
