@@ -13,9 +13,9 @@
 
 ## Inference (`cd` to test folder)
 
-Download the testing data drom [here](https://drive.google.com/file/d/1Y7uV0gomwWyxCvvH8TIbY7D9cTAUy6om/view).
+Download the testing data from [here](https://drive.google.com/file/d/1Y7uV0gomwWyxCvvH8TIbY7D9cTAUy6om/view).
 
-If you want to test on the augmented testing images, download the images from [here](https://drive.google.com/drive/folders/1tUjnPW2_HfC7tpRBYG9xh3f3DfGL2CSk?usp=sharing)
+If you want to test on the augmented testing images, download the images from [here](https://drive.google.com/drive/folders/1tUjnPW2_HfC7tpRBYG9xh3f3DfGL2CSk?usp=sharing) and put it to the testing data folder.
 
 Download pretrained checkpoints from [here](https://drive.google.com/drive/folders/1hunG-84GOSq-qviJRvkXeSMFgnItOTTU?usp=sharing).
 The checkpoint trained without augmentation is better for testing set in the VITON. But the checkpoint trained with augmentation is more robust for in-the-wild images.
