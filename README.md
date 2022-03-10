@@ -15,7 +15,7 @@
 
 Download the testing data from [here](https://drive.google.com/file/d/1Y7uV0gomwWyxCvvH8TIbY7D9cTAUy6om/view).
 
-If you want to test on the augmented testing images, download the images from [here](https://drive.google.com/drive/folders/1tUjnPW2_HfC7tpRBYG9xh3f3DfGL2CSk?usp=sharing) and put it to the testing data folder.
+If you want to test on the augmented testing images, download the images from [here](https://drive.google.com/drive/folders/1tUjnPW2_HfC7tpRBYG9xh3f3DfGL2CSk?usp=sharing) and put it to the testing data folder downloaded above, change the [image folder here](https://github.com/SenHe/Flow-Style-VTON/blob/dc3ddc5b16b1905c69acba8dfbe70ec66dcb91ec/test/data/aligned_dataset_test.py#L16) to `_ma_img`.
 
 Download pretrained checkpoints from [here](https://drive.google.com/drive/folders/1hunG-84GOSq-qviJRvkXeSMFgnItOTTU?usp=sharing).
 The checkpoint trained without augmentation is better for testing set in the VITON. But the checkpoint trained with augmentation is more robust for in-the-wild images.
