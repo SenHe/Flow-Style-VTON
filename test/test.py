@@ -26,12 +26,12 @@ def de_offset(s_grid):
     grid = torch.stack([x,y], dim=0).float().cuda()
     grid = grid.unsqueeze(0).expand(b, -1, -1, -1)
 
-    offset = s_grid - grid
+    offset = grid - s_grid
 
     offset_x = offset[:,0,:,:] * (w-1) / 2
     offset_y = offset[:,1,:,:] * (w-1) / 2
 
-    offset = torch.cat((offset_x,offset_y),0)
+    offset = torch.cat((offset_y,offset_x),0)
     
     return  offset
 
