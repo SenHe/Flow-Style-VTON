@@ -59,8 +59,7 @@ load_checkpoint(gen_model, opt.gen_checkpoint)
 total_steps = (start_epoch-1) * dataset_size + epoch_iter
 step = 0
 step_per_batch = dataset_size / opt.batchSize
-w_color_path = '/home/sh0089/sen/fashion/train_warped_color/'
-w_edge_path = '/home/sh0089/sen/fashion/train_warped_edge/'
+
 
 for epoch in range(1,2):
 
