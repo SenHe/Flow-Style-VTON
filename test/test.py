@@ -29,7 +29,7 @@ def de_offset(s_grid):
     offset = grid - s_grid
 
     offset_x = offset[:,0,:,:] * (w-1) / 2
-    offset_y = offset[:,1,:,:] * (w-1) / 2
+    offset_y = offset[:,1,:,:] * (h-1) / 2
 
     offset = torch.cat((offset_y,offset_x),0)
     
