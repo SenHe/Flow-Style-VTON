@@ -25,7 +25,7 @@ python test.py --name demo --resize_or_crop None --batchSize 1 --gpu_ids 0 --war
 
 ## Training ( `cd` to the train folder)
 
-For VITON dataset, download the training data from [VITON_train](https://drive.google.com/file/d/1Uc0DTTkSfCPXDhd4CMx2TQlzlC6bDolK/view?usp=sharing) and put the folder `VITON_traindata` under the folder`train/datase` 
+For VITON dataset, download the training data from [VITON_train](https://drive.google.com/file/d/1Uc0DTTkSfCPXDhd4CMx2TQlzlC6bDolK/view?usp=sharing) and put the folder `VITON_traindata` under the folder`train/dataset` 
 
 For perceptual loss computation, download  the vgg checkpoint from [VGG_Model](https://drive.google.com/file/d/1Mw24L52FfOT9xXm3I1GL8btn7vttsHd9/view?usp=sharing) and put `vgg19-dcbb9e9d.pth` under the folder `train/models`.
 
