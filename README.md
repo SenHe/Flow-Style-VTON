@@ -23,6 +23,9 @@ The checkpoint trained without augmentation is better for testing set in the VIT
 python test.py --name demo --resize_or_crop None --batchSize 1 --gpu_ids 0 --warp_checkpoint your_path_to_the_down_loaded_ckp/PFAFN_warp_epoch_101.pth --gen_checkpoint your_path_to_the_down_loaded_ckp/PFAFN_gen_epoch_101.pth --dataroot 'your_path_to_the_downloaded_test_data'
 ```
 
+## Test
+[FID](https://github.com/mseitzer/pytorch-fid) and [SSIM](https://github.com/Po-Hsun-Su/pytorch-ssim)
+
 ## Training ( `cd` to the train folder)
 
 For VITON dataset, download the training data from [VITON_train](https://drive.google.com/file/d/1Uc0DTTkSfCPXDhd4CMx2TQlzlC6bDolK/view?usp=sharing) and put the folder `VITON_traindata` under the folder`train/dataset` 
