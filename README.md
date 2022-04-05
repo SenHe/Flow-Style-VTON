@@ -7,7 +7,7 @@
 ## Requirements
 
 - python 3.6
-- pytorch 1.1.0 (as no third party libraries are required in this codebase, other version should work, not yet tested)
+- pytorch 1.1.0 (as no third party libraries are required in this codebase, other versions should work, not yet tested)
 - tensorboardX
 - opencv
 
