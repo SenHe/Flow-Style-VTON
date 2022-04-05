@@ -1,5 +1,5 @@
 # Style-Based Global Appearance Flow for Virtual Try-On (CVPR 2022)
-### [Project Page](https://github.com/SenHe/Flow-Style-VTON/) | [Paper](https://github.com/SenHe/Flow-Style-VTON/) | [Video](https://www.youtube.com/watch?v=Og7IDzQJwZQ) | [Supplementary Material](https://github.com/SenHe/Flow-Style-VTON/blob/main/supp.pdf)
+### [Project Page](https://github.com/SenHe/Flow-Style-VTON/) | [Paper](https://arxiv.org/pdf/2204.01046.pdf) | [Video](https://www.youtube.com/watch?v=Og7IDzQJwZQ) | [Supplementary Material](https://github.com/SenHe/Flow-Style-VTON/blob/main/supp.pdf)
 <div align="center">
 <img src=gif_detail.gif width="1200">
 </div>
