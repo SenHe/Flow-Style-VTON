@@ -16,7 +16,7 @@ class AlignedDataset(BaseDataset):
         dir_I = '_img'
         self.dir_I = os.path.join(opt.dataroot, opt.phase + dir_I)
 
-        dir_C = '_color'
+        dir_C = '_clothes'
         self.dir_C = os.path.join(opt.dataroot, opt.phase + dir_C)
 
         dir_E = '_edge'
