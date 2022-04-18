@@ -45,7 +45,7 @@ For pose, you can use [Openpose](https://github.com/CMU-Perceptual-Computing-Lab
 
 For dense pose, you can use [Dense pose](https://github.com/facebookresearch/DensePose).
 
-__Note:__ To train the model on your own dataset, you may need to decrease the learning rate to 0.00001 [here](https://github.com/SenHe/Flow-Style-VTON/blob/a6a17405fe4d864ef1dd9d078fd9f2dd23b6ec35/train/options/train_options.py#L25).
+__Note:__ To train the model on your own dataset, you may need to decrease the [learning rate](https://github.com/SenHe/Flow-Style-VTON/blob/a6a17405fe4d864ef1dd9d078fd9f2dd23b6ec35/train/options/train_options.py#L25) to 0.00001.
 
 
 __Note:__ if you want to train with augmentation, check [here](https://github.com/SenHe/Flow-Style-VTON/blob/785a00fa4ce68fa0cee9f8247f1dc2d35e946842/train/train_PBAFN_stage1_fs.py#L21), [here](https://github.com/SenHe/Flow-Style-VTON/blob/785a00fa4ce68fa0cee9f8247f1dc2d35e946842/train/train_PBAFN_e2e_fs.py#L21), [here](https://github.com/SenHe/Flow-Style-VTON/blob/785a00fa4ce68fa0cee9f8247f1dc2d35e946842/train/train_PFAFN_stage1_fs.py#L23) and [here](https://github.com/SenHe/Flow-Style-VTON/blob/785a00fa4ce68fa0cee9f8247f1dc2d35e946842/train/train_PFAFN_e2e_fs.py#L22) in the code.
