@@ -74,7 +74,7 @@ for epoch in range(1,2):
         clothes = data['clothes']
         ##edge is extracted from the clothes image with the built-in function in python
         edge = data['edge']
-        edge = torch.FloatTensor((edge.detach().numpy() > 0.5).astype(np.int))
+        edge = torch.FloatTensor((edge.detach().numpy() > 0.5).astype(np.int64))
         clothes = clothes * edge        
 
         #import ipdb; ipdb.set_trace()
@@ -107,7 +107,7 @@ for epoch in range(1,2):
                 os.path.join('./our_t_results', data['p_name'][0]),
                 nrow=int(1),
                 normalize=True,
-                range=(-1,1),
+                value_range=(-1,1),
             )
             
             ## save person image, garment, flow, warped garment, and try-on image
