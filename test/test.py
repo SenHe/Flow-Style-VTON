@@ -60,6 +60,8 @@ total_steps = (start_epoch-1) * dataset_size + epoch_iter
 step = 0
 step_per_batch = dataset_size / opt.batchSize
 
+if not os.path.exists('our_t_results'):
+  os.mkdir('our_t_results')
 
 for epoch in range(1,2):
 
